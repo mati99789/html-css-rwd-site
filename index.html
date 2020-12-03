@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="nav__container">
+        <span class="nav__logo">AppLab</span>
+        <nav class="nav">
+          <input type="checkbox" id="menu-switcher" class="hamburger--toggle" />
+          <label
+            tabindex="0"
+            aria-label="Main Menu"
+            role="button"
+            class="hamburger"
+            for="menu-switcher"
+          ></label>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link dropdown">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link dropdown">Pages</a>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="heading__container">
+        <h1 class="heading--primary">Promote Your App With Applab</h1>
+        <p class="heading__text">
+          Get more users to promote your app with this template
+        </p>
+
+        <button class="btn btn--blue">Get Start Now</button>
+
+        <figure class="heading__img">
+          <img src="./images/phone.png" alt="" />
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <article class="row u-margin-top-huge">
+          <div class="container">
+        <h2 class="heading--secondary">Save your time to using applab</h2>
+          <div class="col-1-of-3">
+            <div class="section-about">
+              <figure class="section-about__img section-about__img--one">
+                <img src="./images/icons/2.svg" alt="" />
+              </figure>
+              <p class="section-about__text">Manage team in One Place</p>
+            </div>
+          </div>
+          <div class="col-2-of-3">
+            <div class="section-about">
+              <figure class="section-about__img section-about__img--two">
+                <img src="./images/icons/1.svg" alt="" />
+              </figure>
+              <p class="section-about__text">All-powerful Pointing has no control</p>
+            </div>
+          </div>
+          <div class="col-3-of-3">
+            <div class="section-about">
+              <figure class="section-about__img section-about__img--three">
+                <img src="./images/icons/3.svg" alt="" />
+              </figure>
+              <p class="section-about__text">Establish a solid online presence</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>

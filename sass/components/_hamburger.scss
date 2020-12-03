@@ -1,0 +1,45 @@
+.hamburger {
+    width: 30px;
+    height: 21px;
+    border: 0;
+    border-top: 3px solid #fff;
+    display: block;
+    position: relative;
+    background: transparent;
+    transition: .2s transform linear;
+
+    &.hamburger::before,
+    &.hamburger::after {
+        content: "";
+        display: block;
+        border-top: 3px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(5px);
+        transition: .2s transform linear;
+    }  
+
+    &.hamburger::after {
+        transform: translateY(14px);
+    }
+
+    &--toggle:checked ~ .nav__list {
+        display: block;
+    }
+
+    &--toggle:checked ~ .hamburger {
+        transform: rotate(45deg);
+        border: none;
+        outline: none;
+    }
+
+    &--toggle:checked ~ .hamburger::after {
+        transform: rotate(-90deg) translateX(-10px);
+    }
+
+    &--toggle:checked ~ .hamburger::before {
+        transform: translateY(10px);
+    }
+}

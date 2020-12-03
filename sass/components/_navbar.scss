@@ -1,0 +1,14 @@
+.nav {
+    &__item {
+        text-align: center;
+        padding: .9rem .3rem;
+        background-color: #2C2C2C;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-family: poppinsregular, sans-serif;
+        color: #fff;
+    }
+}
