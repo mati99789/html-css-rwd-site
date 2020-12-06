@@ -1,41 +1,41 @@
 .nav__logo {
-    color: #fff;
+    color: $color-white;
     font-size: 1.2rem;
     font-weight: 700;
 
     @include respond(big-desktop) {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 }
 
 .heading {
     &--primary {
-        font-size: 2rem;
-        color: #fff;
+        font-size: 2.4rem;
+        color: $color-white;
         font-weight: 600;
         letter-spacing: 3px;
         padding-top: 3rem;
     }
     
     &--secondary {
-        font-size: 1.6rem;
+        font-size: 2.3rem;
         font-weight: 500;
-        color: #403E47;
+        color: $color-secondary;
         text-align: center;
         
         &--white {
-            color: #fff;
+            color: $color-white;
         }
     }
 
     &-tertiary {
         &--white {
-            color: #fff;
+            color: $color-white;
         }
     }
 
     &__text {
-        color: #fff;
+        color: $color-white;
         font-size: 1rem;
         font-weight: 600;
         letter-spacing: 1.5px;
@@ -48,14 +48,14 @@
 .price-heading{
     &__text {
         font-size: 1.2rem;
-        letter-spacing: 2px;
+        letter-spacing: 1.4px;
         line-height: 1.7;
         font-weight: 400;
     }
 }
 
 .reviews {
-    color: #fff;
+    color: $color-white;
 
     &__name {
         text-transform: uppercase;
@@ -68,8 +68,8 @@
 .information-applab,
 .footer {
     &__text {
-        color: rgb(86,86,86);
-        font-size: .8rem;
+        color: $color-secondary-light;
+        font-size: 1rem;
         font-weight: 700;
     }
 }

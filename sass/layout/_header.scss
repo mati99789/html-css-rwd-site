@@ -1,5 +1,4 @@
 .header {
-    height: 95vh;
     background-image: url(../images/banner/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +6,7 @@
 }
 
 .nav__container {
-    background-color: #2C2C2C;
+    background-color: $color-secondary;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -66,10 +65,7 @@
         @include respond(tab-port) {
             display: flex;
             align-items: center;
-
-            .heading__img {
-                margin-top: 8rem;
-            }
+            padding: 10rem;
         }
 
         @include respond(big-desktop) {

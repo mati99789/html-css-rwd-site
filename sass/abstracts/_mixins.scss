@@ -7,13 +7,15 @@
         @media only screen and (min-width: 56.25em ) { @content; } 
     }
 
-    //TAB-LANDSCAPE
-    @if $breakpoint == tab-land {
-        @media only screen and (min-width: 75em) { @content; } // 1200px
-    }
-    
     // BIG-DESKTOP
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 64em) { @content; } 
     }
+}
+
+// Mixin flexbox center
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

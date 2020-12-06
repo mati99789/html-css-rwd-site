@@ -8,20 +8,20 @@
 
 
     &--turquoise {
-        color: #fff;
+        color: $color-white;
         background-color: #37EBED;
     }
 
     &--blue {
-        color: #fff;
-        background-color: #0181F5;
+        color: $color-white;
+        background-color: $color-primary;
         font-weight: 500;
     }
 
     &--price {
-        background-color: #fff;
-        border: 1px solid #0181F5;
-        color: #0181F5;
+        background-color: $color-white;
+        border: 1px solid $color-primary;
+        color: $color-primary;
         font-weight: 500;
         margin: 2rem 0 ;
     }

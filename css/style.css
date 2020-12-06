@@ -348,6 +348,7 @@ html {
 
 body {
   font-family: Poppin, sans-serif;
+  color: #5a5a5a;
 }
 
 input {
@@ -428,21 +429,21 @@ input {
 }
 @media only screen and (min-width: 64em) {
   .nav__logo {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
 }
 
 .heading--primary {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #fff;
   font-weight: 600;
   letter-spacing: 3px;
   padding-top: 3rem;
 }
 .heading--secondary {
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   font-weight: 500;
-  color: #403E47;
+  color: #2C2C2C;
   text-align: center;
 }
 .heading--secondary--white {
@@ -462,7 +463,7 @@ input {
 .reviews__text,
 .price-heading__text {
   font-size: 1.2rem;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
   line-height: 1.7;
   font-weight: 400;
 }
@@ -479,8 +480,8 @@ input {
 
 .information-applab__text,
 .footer__text {
-  color: #565656;
-  font-size: 0.8rem;
+  color: #9aa39b;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -509,7 +510,6 @@ input {
 }
 
 .header {
-  height: 95vh;
   background-image: url(../images/banner/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -570,9 +570,7 @@ input {
   .heading__container {
     display: flex;
     align-items: center;
-  }
-  .heading__container .heading__img {
-    margin-top: 8rem;
+    padding: 10rem;
   }
 }
 @media only screen and (min-width: 64em) {
@@ -611,24 +609,24 @@ input {
 }
 
 .section-about {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 .section-about__text {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #403E47;
+  color: #2C2C2C;
   text-align: center;
   width: 50%;
 }
 .section-about__img {
   padding: 2rem;
   border-radius: 25px;
-  display: flex;
   width: 100px;
   height: 100px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -654,7 +652,8 @@ input {
 }
 @media only screen and (min-width: 56.25em) {
   .feature-section .features {
-    max-width: 50%;
+    max-width: 35%;
+    padding: 1rem;
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -669,13 +668,13 @@ input {
   background: url(../images/banner/testmonial.png);
   background-size: cover;
   background-position: 50% 50%;
-  color: #f2f4f4;
+  color: #fff;
   position: relative;
   padding-bottom: calc(744/1920 * 100%);
   z-index: 1;
 }
 .reviews::before {
-  background-color: rgba(8, 133, 246, 0.75);
+  background-color: rgba(104, 181, 251, 0.8);
   content: "";
   height: 100%;
   left: 0;
@@ -685,27 +684,34 @@ input {
   z-index: -1;
 }
 .reviews__heading {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 5rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__text {
+  width: 50%;
 }
 
 .price {
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .price-heading {
   text-align: center;
   padding: 1rem;
-  color: #463C39;
+  color: #2C2C2C;
 }
 .price-plan {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   box-shadow: 0px 15px 44px -3px rgba(0, 0, 0, 0.5);
   margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .price-plan__heading {
   display: flex;
@@ -736,6 +742,23 @@ input {
 .price-plan__price--business {
   color: #1ED66F;
 }
+@media only screen and (min-width: 56.25em) {
+  .price-plan {
+    width: 33.3%;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.5);
+  }
+  .price-plan:nth-child(2) {
+    transform: scaleY(1.1);
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+}
 
 .store-app {
   background-image: url(../images/banner/product.png);
@@ -743,7 +766,7 @@ input {
   background-position: 50% 50%;
   color: #fff;
   text-align: center;
-  padding: 0.5rem;
+  padding: 5rem;
 }
 .store-app__img {
   max-width: 100%;
@@ -752,6 +775,19 @@ input {
 }
 .store-app__img img {
   max-width: 100%;
+}
+@media only screen and (min-width: 64em) {
+  .store-app {
+    padding: 10rem;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .store-app__img {
+    display: flex;
+    margin-left: 2rem;
+  }
 }
 
 .information-applab {
@@ -763,9 +799,21 @@ input {
   justify-content: flex-start;
   align-items: center;
 }
+@media only screen and (min-width: 56.25em) {
+  .information-applab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 64em) {
+  .information-applab {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10rem 5rem;
+  }
+}
 
 .footer {
-  background-color: black;
+  background-color: #000;
   text-align: center;
   padding: 1rem;
 }
@@ -873,8 +921,8 @@ input {
 
 .icon {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin: 0 0.5rem;
 }
 .icon__facebook {
