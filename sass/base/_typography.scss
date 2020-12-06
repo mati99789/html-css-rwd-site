@@ -2,8 +2,11 @@
     color: #fff;
     font-size: 1.2rem;
     font-weight: 700;
-}
 
+    @include respond(big-desktop) {
+        font-size: 1.7rem;
+    }
+}
 
 .heading {
     &--primary {
@@ -11,7 +14,24 @@
         color: #fff;
         font-weight: 600;
         letter-spacing: 3px;
-        font-family: 'Poppin';
+        padding-top: 3rem;
+    }
+    
+    &--secondary {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #403E47;
+        text-align: center;
+        
+        &--white {
+            color: #fff;
+        }
+    }
+
+    &-tertiary {
+        &--white {
+            color: #fff;
+        }
     }
 
     &__text {
@@ -20,11 +40,36 @@
         font-weight: 600;
         letter-spacing: 1.5px;
     }
+    
+}
 
-    &--secondary {
-        font-size: 1.9rem;
+.features,
+.reviews,
+.price-heading{
+    &__text {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        line-height: 1.7;
+        font-weight: 400;
+    }
+}
+
+.reviews {
+    color: #fff;
+
+    &__name {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        margin-left: 1.5rem;
         font-weight: 500;
-        color: #403E47;
-        text-align: center;
+    }
+}
+
+.information-applab,
+.footer {
+    &__text {
+        color: rgb(86,86,86);
+        font-size: .8rem;
+        font-weight: 700;
     }
 }

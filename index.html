@@ -1,86 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header id="header" class="header">
-      <div class="nav__container">
-        <span class="nav__logo">AppLab</span>
-        <nav class="nav">
-          <input type="checkbox" id="menu-switcher" class="hamburger--toggle" />
-          <label
-            tabindex="0"
-            aria-label="Main Menu"
-            role="button"
-            class="hamburger"
-            for="menu-switcher"
-          ></label>
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Features</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-            <li class="nav__item">
-              <a href="#" class="nav__link dropdown">Blog</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link dropdown">Pages</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
 
-      <div class="heading__container">
-        <h1 class="heading--primary">Promote Your App With Applab</h1>
-        <p class="heading__text">
-          Get more users to promote your app with this template
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <meta name="language" content="en">
+  <meta name="author" content="Mateusz Urbaniak">
+  <meta name="description" content="Applab Manage team in one place">
+  <title>Applab | Home Page</title>
+</head>
 
-        <button class="btn btn--blue">Get Start Now</button>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="nav__container">
+      <span class="nav__logo">AppLab</span>
+      <nav class="nav">
+        <input type="checkbox" id="menu-switcher" class="hamburger--toggle" />
+        <label tabindex="0" aria-label="Main Menu" role="button" class="hamburger" for="menu-switcher"></label>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#header" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#features" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link dropdown">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link dropdown">Pages</a>
+          </li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+         <li class="nav__item"><button class="btn btn--blue">Download</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="heading__container">
+      <div class="heading__wrapper">
+      <h1 class="heading--primary">Promote Your App With Applab</h1>
+      <p class="heading__text">
+        Get more users to promote your app with this template
+      </p>
+      <button class="btn btn--turquoise">Get Start Now</button>
+    </div>
+      <figure class="heading__img">
+        <img src="./images/phone.png" alt="" />
+      </figure>
+    </div>
+  </header>
 
-        <figure class="heading__img">
-          <img src="./images/phone.png" alt="" />
-        </figure>
-      </div>
-    </header>
+  <!-- Main -->
+  <main>
 
-    <main>
-      <article class="row u-margin-top-huge">
-          <div class="container">
-        <h2 class="heading--secondary">Save your time to using applab</h2>
-          <div class="col-1-of-3">
-            <div class="section-about">
-              <figure class="section-about__img section-about__img--one">
-                <img src="./images/icons/2.svg" alt="" />
-              </figure>
-              <p class="section-about__text">Manage team in One Place</p>
-            </div>
-          </div>
-          <div class="col-2-of-3">
-            <div class="section-about">
-              <figure class="section-about__img section-about__img--two">
-                <img src="./images/icons/1.svg" alt="" />
-              </figure>
-              <p class="section-about__text">All-powerful Pointing has no control</p>
-            </div>
-          </div>
-          <div class="col-3-of-3">
-            <div class="section-about">
-              <figure class="section-about__img section-about__img--three">
-                <img src="./images/icons/3.svg" alt="" />
-              </figure>
-              <p class="section-about__text">Establish a solid online presence</p>
-            </div>
+    <!-- APP section -->
+    <article class="app-section u-margin-top-huge">
+      <h2 class="heading--secondary">Save your time to using applab</h2>
+      <div class="app-section__container">
+        <div class="col-1-of-3">
+          <div class="section-about">
+            <figure class="section-about__img section-about__img--one">
+              <img src="./images/icons/2.svg" alt="" />
+            </figure>
+            <p class="section-about__text">Manage team in One Place</p>
           </div>
         </div>
-      </article>
-    </main>
-  </body>
+        <div class="col-2-of-3">
+          <div class="section-about">
+            <figure class="section-about__img section-about__img--two">
+              <img src="./images/icons/1.svg" alt="" />
+            </figure>
+            <p class="section-about__text">All-powerful Pointing has no control</p>
+          </div>
+        </div>
+        <div class="col-3-of-3">
+          <div class="section-about">
+            <figure class="section-about__img section-about__img--three">
+              <img src="./images/icons/3.svg" alt="" />
+            </figure>
+            <p class="section-about__text">Establish a solid online presence</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Feature Section -->
+    <article class="feature-section" id="features">
+      <div class="feature-section__container">
+        <header class="features">
+          <h2 class="heading--secondary">Features that give you real feel</h2>
+          <p class="features__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus explicabo nemo ut reprehenderit
+            laboriosam, culpa quos rerum, doloremque labore nostrum velit voluptatibus deleniti iure esse soluta quae
+            excepturi.
+          </p>
+          <buton class="btn btn--blue">Download Now</buton>
+        </header>
+        <figure class="features__img">
+          <img src="./images/draw.png" alt="">
+        </figure>
+      </div>
+    </article>
+
+    <!-- Review section -->
+    <article class="reviews u-margin-top-medium">
+      <header class="reviews__heading">
+        <h2 class="heading--primary">Review from our regular users</h2>
+        <p class="reviews__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil voluptatibus, dicta
+          vero consectetur rem rerum accusamus deleniti? Odio, incidunt doloribus.</p>
+      </header>
+      <div class="reviews__rating">
+        <label for="star1">One Star</label>
+        <input type="radio" id="start1" name="star" value="1">
+        <label for="star2">Two Star</label>
+        <input type="radio" id="start2" name="star" value="2">
+        <label for="star3">Three Star</label>
+        <input type="radio" id="start3" name="star" value="3">
+        <label for="star4">Four Star</label>
+        <input type="radio" id="start4" name="star" value="4">
+        <label for="star5">Five Star</label>
+        <input type="radio" id="start5" name="star" value="4">
+        <p class="reviews__name">- Robert Smile</p>
+      </div>
+    </article>
+
+    <!-- Plan pricing -->
+    <article class="row" id="pricing">
+      <section class="price-heading">
+        <h2 class="heading--secondary">Unlock full Power</h2>
+        <p class="price-heading__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi debitis
+          nesciunt ullam corrupti quasi ut nihil reiciendis velit atque officia?</p>
+      </section>
+    </article>
+    <article class="price">
+      <!-- Basic -->
+        <section class="price-plan price-plan--basic">
+          <div class="price-plan__heading price-plan__heading--basic">
+            <h3 class="heading--tertiary">Basic</h3>
+            <span class="price-plan__price price-plan__price--basic">$06</span>
+          </div>
+          <p class="price-plan__text">One User</p>
+          <p class="price-plan__text">1000 ui elements</p>
+          <p class="price-plan__text">Webmail Support</p>
+          <p class="price-plan__text">100GB Cloud Storage</p>
+          <button class="btn btn--price">Get Now</button>
+        </section>
+
+      <!-- Team -->
+      <section class="price-plan price-plan--basic">
+        <div class="price-plan__heading price-plan__heading--team">
+          <h3 class="heading--tertiary">Team</h3>
+          <span class="price-plan__price price-plan__price--team">$06</span>
+        </div>
+        <p class="price-plan__text">One User</p>
+        <p class="price-plan__text">1000 ui elements</p>
+        <p class="price-plan__text">Webmail Support</p>
+        <p class="price-plan__text">100GB Cloud Storage</p>
+        <p class="price-plan__text">Unlimited Users Limit</p>
+        <button class="btn btn--price">Get Now</button>
+      </section>
+
+      <!-- Business -->
+      <section class="price-plan price-plan--basic">
+        <div class="price-plan__heading price-plan__heading--business">
+          <h3 class="heading--tertiary">Business</h3>
+          <span class="price-plan__price price-plan__price--business">$06</span>
+        </div>
+        <p class="price-plan__text">One User</p>
+        <p class="price-plan__text">1000 ui elements</p>
+        <p class="price-plan__text">Webmail Support</p>
+        <p class="price-plan__text">100GB Cloud Storage</p>
+        <button class="btn btn--price">Get Now</button>
+      </section>
+    </article>
+
+    <!-- Store APP  -->
+    <article class="row">
+      <div class="store-app">
+        <h2 class="heading--secondary heading--secondary--white">Get start from now and increase productivity</h2>
+        <figure class="store-app__img">
+          <img src="./images/app.svg" alt="">
+          <img src="./images/play.svg" alt="">
+        </figure>
+      </div>
+    </article>
+
+    <!-- Information section -->
+    <article class="information-applab" id="contact">
+      <section class="information-applab__applab">
+        <h3 class="heading-tertiary--white">Applab</h3>
+        <p class="information-applab__text"> Firmament morning sixhth subdue darkness creeping gathered divide.</p>
+        <div class="information-applab__media">
+          <span aria-hidden="true" class="icon icon__facebook"></span>
+          <span aria-hidden="true" class="icon icon__twitter"></span>
+          <span aria-hidden="true" class="icon icon__instagram"></span>
+        </div>
+      </section>
+      <section class="information-applab__services">
+        <h3 class="heading-tertiary--white">Services</h3>
+        <p class="information-applab__text">Team management</p>
+        <p class="information-applab__text">Collaboration</p>
+        <p class="information-applab__text">Todo</p>
+        <p class="information-applab__text">Events</p>
+      </section>
+      <section class="information-applab__useful-links">
+        <h3 class="heading-tertiary--white">Useful Links</h3>
+        <p class="information-applab__text">Pricing</p>
+        <p class="information-applab__text">Features</p>
+        <p class="information-applab__text">Blog</p>
+        <p class="information-applab__text">Contact</p>
+      </section>
+      <section class="information-applab__downloads">
+        <h3 class="heading-tertiary--white">Downloads</h3>
+        <p class="information-applab__text">Donwload from Apple Store</p>
+        <p class="information-applab__text">Download from Play Store</p>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">
+      Copyright &copy;2020 All rights reserved |This template is made with &hearts; by 
+    </p>
+    <p class="footer__text">
+      <a href="#" class="footer__link">Colorlib</a>
+    </p>
+  </footer>
+</body>
+
 </html>

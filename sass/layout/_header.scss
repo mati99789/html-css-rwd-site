@@ -12,9 +12,10 @@
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
-    position: relative;
-
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
 
     .nav__list {
         position: absolute;
@@ -24,11 +25,56 @@
         display: none;
         width: 100%;
     }
+
+    @include respond(big-desktop) {
+
+        background-color: transparent;
+        position: relative;
+        justify-content: space-between;
+
+        .nav__list {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            align-items: center;
+
+            .nav__item {
+                padding: 2rem 1rem;
+            }
+
+            .btn {
+                margin-left: 7rem;
+                font-weight: 500;
+            }
+        }
+
+        .nav__item {
+            background-color: transparent;
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
 }
 
 .heading {
     &__container {
         padding: 1rem;
+        margin-top: 2rem;
+
+        @include respond(tab-port) {
+            display: flex;
+            align-items: center;
+
+            .heading__img {
+                margin-top: 8rem;
+            }
+        }
+
+        @include respond(big-desktop) {
+            justify-content: space-around;
+        }
     }
 
     &__text {
@@ -37,7 +83,7 @@
     }
 
     &__img {
-        margin: 3rem auto;
+        margin: 3rem;
 
         img {
             max-width: 100%;

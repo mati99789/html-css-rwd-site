@@ -1,0 +1,28 @@
+.reviews__rating {
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    input {
+        position: relative;
+        left: -9999px;
+    }
+
+    label {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        color: transparent;
+
+        &::before {
+            content: "★";
+            color: #ffa500;
+            font-size: 50px;
+            line-height: 20px;
+            margin-right: -100%;
+        }
+    }
+}
