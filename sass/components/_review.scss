@@ -4,19 +4,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
+    @include respond(tab-port) {
 
-    input {
-        position: relative;
-        left: -9999px;
     }
 
-    label {
+    span {
         width: 30px;
         height: 30px;
         padding: 5px;
         color: transparent;
-
+        display: inline-block;
+        margin: 0 .5rem;
         &::before {
             content: "★";
             color: #ffa500;

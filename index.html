@@ -111,16 +111,11 @@
           vero consectetur rem rerum accusamus deleniti? Odio, incidunt doloribus.</p>
       </header>
       <div class="reviews__rating">
-        <label for="star1">One Star</label>
-        <input type="radio" id="star1" name="star" value="1">
-        <label for="star2">Two Star</label>
-        <input type="radio" id="star2" name="star" value="2">
-        <label for="star3">Three Star</label>
-        <input type="radio" id="star3" name="star" value="3">
-        <label for="star4">Four Star</label>
-        <input type="radio" id="star4" name="star" value="4">
-        <label for="star5">Five Star</label>
-        <input type="radio" id="star5" name="star" value="4">
+        <span for="star1">One Star</span>
+        <span for="star2">Two Star</span>
+        <span for="star3">Three Star</span>
+        <span for="star4">Four Star</span>
+        <span for="star5">Five Star</span>
         <p class="reviews__name">- Robert Smile</p>
       </div>
     </article>
@@ -136,41 +131,47 @@
     <article class="price">
       <!-- Basic -->
         <section class="price-plan price-plan--basic">
-          <div class="price-plan__heading price-plan__heading--basic">
+          <header class="price-plan__heading price-plan__heading--basic">
             <h3 class="heading--tertiary">Basic</h3>
             <span class="price-plan__price price-plan__price--basic">$06</span>
-          </div>
-          <p class="price-plan__text">One User</p>
-          <p class="price-plan__text">1000 ui elements</p>
-          <p class="price-plan__text">Webmail Support</p>
-          <p class="price-plan__text">100GB Cloud Storage</p>
+          </header>
+          <ul class="price-plan__list">
+            <li><p class="price-plan__text">One User</p></li>
+            <li><p class="price-plan__text">1000 ui elements</p></li>
+            <li><p class="price-plan__text">Webmail Support</p></li>
+            <li><p class="price-plan__text">100GB Cloud Storage</p></li>
+          </ul>
           <button class="btn btn--price">Get Now</button>
         </section>
 
       <!-- Team -->
       <section class="price-plan price-plan--basic">
-        <div class="price-plan__heading price-plan__heading--team">
+        <header class="price-plan__heading price-plan__heading--team">
           <h3 class="heading--tertiary">Team</h3>
           <span class="price-plan__price price-plan__price--team">$06</span>
-        </div>
-        <p class="price-plan__text">One User</p>
-        <p class="price-plan__text">1000 ui elements</p>
-        <p class="price-plan__text">Webmail Support</p>
-        <p class="price-plan__text">100GB Cloud Storage</p>
-        <p class="price-plan__text">Unlimited Users Limit</p>
+        </header>
+        <ul class="price-plan__list">
+        <li><p class="price-plan__text">One User</p></li>
+        <li><p class="price-plan__text">1000 ui elements</p></li>
+        <li><p class="price-plan__text">Webmail Support</p></li>
+        <li><p class="price-plan__text">100GB Cloud Storage</p></li>
+        <li><p class="price-plan__text">Unlimited Users Limit</p></li>
+      </ul>
         <button class="btn btn--price">Get Now</button>
       </section>
 
       <!-- Business -->
       <section class="price-plan price-plan--basic">
-        <div class="price-plan__heading price-plan__heading--business">
+        <header class="price-plan__heading price-plan__heading--business">
           <h3 class="heading--tertiary">Business</h3>
           <span class="price-plan__price price-plan__price--business">$06</span>
-        </div>
-        <p class="price-plan__text">One User</p>
-        <p class="price-plan__text">1000 ui elements</p>
-        <p class="price-plan__text">Webmail Support</p>
-        <p class="price-plan__text">100GB Cloud Storage</p>
+        </header>
+        <ul class="price-plan__list">
+          <li><p class="price-plan__text">One User</p></li>
+          <li><p class="price-plan__text">1000 ui elements</p></li>
+          <li><p class="price-plan__text">Webmail Support</p></li>
+          <li><p class="price-plan__text">100GB Cloud Storage</p></li>
+        </ul>
         <button class="btn btn--price">Get Now</button>
       </section>
     </article>
@@ -191,11 +192,11 @@
       <section class="information-applab__applab">
         <h3 class="heading-tertiary--white">Applab</h3>
         <p class="information-applab__text"> Firmament morning sixhth subdue darkness creeping gathered divide.</p>
-        <div class="information-applab__media">
-          <span aria-hidden="true" class="icon icon__facebook"></span>
-          <span aria-hidden="true" class="icon icon__twitter"></span>
-          <span aria-hidden="true" class="icon icon__instagram"></span>
-        </div>
+          <ul class="information-applab__media">
+          <li><span aria-hidden="true" class="icon icon__facebook"></span></li>
+          <li><span aria-hidden="true" class="icon icon__twitter"></span></li>
+          <li><span aria-hidden="true" class="icon icon__instagram"></span></li>
+        </ul>
       </section>
       <section class="information-applab__services">
         <h3 class="heading-tertiary--white">Services</h3>
@@ -204,13 +205,15 @@
         <p class="information-applab__text">Todo</p>
         <p class="information-applab__text">Events</p>
       </section>
-      <section class="information-applab__useful-links">
+      <nav class="information-applab__useful-links">
         <h3 class="heading-tertiary--white">Useful Links</h3>
-        <p class="information-applab__text">Pricing</p>
-        <p class="information-applab__text">Features</p>
-        <p class="information-applab__text">Blog</p>
-        <p class="information-applab__text">Contact</p>
-      </section>
+        <ul>
+          <li class="information-applab__text"><a class="information-applab__link" href="#">Pricing</a></li>
+          <li class="information-applab__text"><a class="information-applab__link" href="#">Features</a></li>
+          <li class="information-applab__text"><a class="information-applab__link" href="#">Blog</a></li>
+          <li class="information-applab__text"><a class="information-applab__link" href="">Contact</a></li>
+        </ul>
+      </nav>
       <section class="information-applab__downloads">
         <h3 class="heading-tertiary--white">Downloads</h3>
         <p class="information-applab__text">Donwload from Apple Store</p>

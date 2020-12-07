@@ -109,7 +109,10 @@
     }
 
     &__text {
-        width: 50%;
+        width: 100%;
+        @include respond(big-desktop) {
+            width: 50%;
+        }
     }
 }
 
@@ -129,6 +132,8 @@
         flex-direction: column;
         box-shadow: 0px 15px 44px -3px $color-black-opacity;
         margin: 1rem 0;
+        text-align: center;
+
         @include flex-center;
     
         &__heading {
@@ -151,6 +156,7 @@
                 background-color: #E8FCF1;
             }
         }
+
 
         &__price {
             font-weight: 700;
@@ -190,7 +196,7 @@
         background-position: 50% 50%;
         color: $color-white;
         text-align: center;
-        padding: 5rem;
+        padding: 2rem;
 
         &__img{
             max-width: 100%;
@@ -211,6 +217,10 @@
                 display: flex;
                 margin-left: 2rem;
             }
+
+            .heading--secondary {
+                width: 50%;
+            }
         }
 }
 
@@ -222,6 +232,13 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-secondary-light;
+        display: block;
+        margin: 1rem 0;
     }
 
     @include respond(tab-port) {
