@@ -1,10 +1,22 @@
 # HTML and CSS(RWD).
 This time we will use the React library to build a simple database storing information about tasks manager.
-![](./assets/demo.png);
+
+### mobile => 600px
+
+![](./assets/mobile.png)
+
+### tablet => 900px
+
+![](./assets/tablet.png)
+
+### desktop => 1200px
+
+![](./assets/desktop.png)
 
 **Main features**:
 - HTML
 - CSS
+- SASS
 
 
 
