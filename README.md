@@ -1,6 +1,21 @@
 # HTML and CSS(RWD).
-This time we will use the React library to build a simple database storing information about tasks manager.
+[Live preview](https://mati99789.github.io/html-css-rwd-site/).
 
+**Main features**:
+- HTML
+- CSS
+- SASS
+
+
+&nbsp;
+
+## 💡 Technologies
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+
+&nbsp;
+
+## Images
 ### mobile => 600px
 
 ![](./assets/mobile.png)
@@ -12,24 +27,6 @@ This time we will use the React library to build a simple database storing infor
 ### desktop => 1200px
 
 ![](./assets/desktop.png)
-
-**Main features**:
-- HTML
-- CSS
-- SASS
-
-
-
-&nbsp;
-
-## 💡 Technologies
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-
-
-
-&nbsp;
-
 
 ## 💭 Conclusions for future projects
 
